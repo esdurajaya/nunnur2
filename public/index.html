@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Node.js Realtime Chat</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="login">
+<h3>Masuk Chat</h3>
+<input id="username" placeholder="Nama kamu">
+<button onclick="setUsername()">Masuk</button>
+</div>
+
+<div id="chat">
+<ul id="messages"></ul>
+<input id="input" placeholder="Ketik pesan...">
+<div>
+<button onclick="addEmoji('😊')">😊</button>
+<button onclick="addEmoji('😂')">😂</button>
+<button onclick="addEmoji('👍')">👍</button>
+</div>
+<button onclick="sendMessage()">Kirim</button>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

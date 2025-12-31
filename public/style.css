@@ -1,0 +1,10 @@
+body{font-family:Arial;background:#ece5dd;margin:0}
+#login,#chat{max-width:500px;margin:auto}
+#chat{display:none;height:100vh;flex-direction:column}
+#messages{flex:1;list-style:none;padding:10px;overflow-y:auto;display:flex;flex-direction:column}
+li{max-width:75%;padding:8px 12px;margin:6px 0;border-radius:15px}
+.me{align-self:flex-end;background:#dcf8c6}
+.other{align-self:flex-start;background:#fff}
+.username{font-size:12px;font-weight:bold;color:#555}
+.time{font-size:10px;color:#888;text-align:right;margin-top:4px}
+input,button{padding:10px;margin:5px;font-size:16px}
