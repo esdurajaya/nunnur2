@@ -1,3 +1,15 @@
+const firebaseConfig = {
+  apiKey: "AIzaSyCKclix8_WYlVcTahkq4aUxP8m2sJ-3rFA",
+  authDomain: "studio-3410504777-deb98.firebaseapp.com",
+  projectId: "studio-3410504777-deb98",
+  storageBucket: "studio-3410504777-deb98.firebasestorage.app",
+  messagingSenderId: "292119707666",
+  appId: "1:292119707666:web:8f525f7347b9020b5218cb"
+};
+
+firebase.initializeApp(firebaseConfig);
+const db = firebase.database();
+
 const socket = io();
 let username = "";
 
